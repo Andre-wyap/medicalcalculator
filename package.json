@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "npm run build && wrangler pages deploy dist"
+    "preview": "npm run build && wrangler pages dev dist",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=medical-insurance-calculator"
   },
   "dependencies": {
     "react": "^18.3.1",
